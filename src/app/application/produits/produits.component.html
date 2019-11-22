@@ -1,0 +1,8 @@
+
+<ul class="list-group list-group-flush">
+<li class="list-group-item" *ngFor="let employe of Employes">
+    <span>{{ employe.matricule }}</span>
+     <span> {{ employe.nom }} </span>
+       <button type="button" [routerLink]="['/produits',employe.matricule]" class="btn btn-primary" style="width:100px"> info </button>
+ </li>
+</ul>
